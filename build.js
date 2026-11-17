@@ -237,7 +237,8 @@ ${config.noindex ? '<meta name="robots" content="noindex">\n' : ''}${canon ? `<l
 <link rel="apple-touch-icon" href="${R}img/apple-touch-icon.png">
 <link rel="preload" href="${R}fonts/young-serif-400.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="${R}fonts/barlow-400.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="${R}fonts/barlow-600.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="${R}fonts/barlow-condensed-700.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="${R}fonts/barlow-condensed-600.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="${R}css/site.css">
 <script>${HEAD_JS}</script>
 <script type="module" src="${R}js/site.mjs"></script>

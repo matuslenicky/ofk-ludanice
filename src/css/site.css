@@ -95,8 +95,8 @@ abbr[title] { text-decoration: none; }
 .brand img { width: 40px; height: 48px; flex: none; }
 .brand-t { display: flex; flex-direction: column; min-width: 0; }
 .brand-n { font: 400 1.35rem/1.05 var(--disp); }
-.brand-s { margin-top: 3px; font: 600 .875rem/1.2 var(--sign); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-.menu-btn { flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px 0 13px; border: 0; border-radius: 6px; background: var(--slate); color: #fff; font: 700 1.05rem/1 var(--sign); letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.brand-s { margin-top: 3px; font: 600 .875rem/1.2 var(--sign); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.menu-btn { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 104px; gap: 8px; min-height: 44px; padding: 0 16px 0 13px; border: 0; border-radius: 6px; background: var(--slate); color: #fff; font: 700 1.05rem/1 var(--sign); letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 .menu-btn:hover { background: var(--slate-d); }
 .nav { display: none; }
 .nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
@@ -108,7 +108,7 @@ html:not(.js) .nav { display: block; overflow-x: auto; }
 html:not(.js) .menu-btn { display: none; }
 @media (min-width: 1000px) { .nav { display: block; } .menu-btn { display: none; } .hdr-in { padding-right: calc(var(--gut) + 90px); } .hdr::after { width: 170px; } }
 @media (min-width: 1000px) and (max-width: 1159.98px) { .nav a { padding: 0 8px; font-size: 1rem; } .nav a[aria-current="page"]::after { left: 8px; right: 8px; } }
-@media (max-width: 379.98px) { .brand-n { font-size: 1.15rem; } .brand-s { display: none; } .brand img { width: 34px; height: 41px; } .menu-btn { padding: 0 12px 0 10px; } .hdr-in { padding-right: calc(var(--gut) + 40px); } .hdr::after { width: 96px; } }
+@media (max-width: 379.98px) { .brand-n { font-size: 1.15rem; } .brand-s { display: none; } .brand img { width: 34px; height: 41px; } .menu-btn { width: 92px; padding: 0 10px; } .hdr-in { padding-right: calc(var(--gut) + 40px); } .hdr::after { width: 96px; } }
 
 /* menu na telefóne: panel vysunutý sprava */
 .menu { position: fixed; inset: 0 0 0 auto; width: min(88vw, 380px); max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 0; border: 0; background: var(--slate-d); color: #fff; overflow-y: auto; }

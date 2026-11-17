@@ -59,7 +59,7 @@ const nazov = (n) => club.nazvy?.[n] || n; // čitateľný názov súpera (úrad
 
 // ---- súťaže, tímy, zápasy ------------------------------------------------------------------------
 const compName = (name) => club.sutaze[name] || club.sutaze[name.replace(/\s+/g, ' ').trim()] || name.replace(/\s+/g, ' ').replace(/-ObFZ TN/, ' ObFZ Trenčín').replace(/\s*Macron \| yoursport\s*/, ' ').replace(/-/g, ' ').trim();
-const ROUND = (r) => (/^\d+$/.test(r) ? `${r}. kolo` : String(r || '').replace(/\.\s*kolo/i, '. kolo').replace(/Kolo/, 'kolo'));
+const ROUND = (r) => (/^\d+$/.test(r) ? `${r}. kolo` : String(r || '').replace(/\.\s*kolo/i, '. kolo').replace(/Kolo/, 'kolo').replace(/^Kvalifika/, 'kvalifika')); // stojí za čiarkou: „…, kvalifikačné stretnutie“
 const teams = sn.teams.map((t) => {
   // ligová súťaž = časť s najväčšou tabuľkou (áčko má v tej istej súťaži aj kvalifikačné stretnutie s tabuľkou o 2 tímoch)
   const league = t.competitions.filter((c) => !c.cup).sort((a, b) => (sn.tables[b.key]?.rows.length || 0) - (sn.tables[a.key]?.rows.length || 0))[0];
@@ -248,7 +248,7 @@ ${ld}</head>
 ${config.ukazka ? '<p class="demo">Návrh webu · nie je to oficiálna stránka klubu</p>' : ''}
 <header class="hdr">
   <div class="wrap hdr-in">
-    <a class="brand" href="${R}"${route ? '' : ' aria-current="page"'}><img src="${R}img/erb-128.webp" alt="" width="40" height="48"><span class="brand-t"><span class="brand-n">OFK Ludanice</span><span class="brand-s">za štrekou od ${club.zalozenie}</span></span><span class="sr">, úvod</span></a>
+    <a class="brand" href="${R}"${route ? '' : ' aria-current="page"'}><img src="${R}img/erb-128.webp" alt="" width="40" height="48"><span class="brand-t"><span class="brand-n">OFK Ludanice</span><span class="brand-s">od roku ${club.zalozenie}</span></span><span class="sr">, úvod</span></a>
     <nav class="nav" aria-label="Hlavné menu"><ul>${NAV.map(li).join('')}</ul></nav>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-haspopup="dialog">${I.menu}<span>Menu</span></button>
   </div>
@@ -268,7 +268,7 @@ ${body}
     <div class="ftr-club">
       <img src="${R}img/erb-128.webp" alt="" width="53" height="64" loading="lazy">
       <p class="ftr-name">${esc(club.nazov)}</p>
-      <p class="ftr-motto">Futbal za štrekou od roku ${club.zalozenie}.</p>
+      <p class="ftr-motto">Futbal v Ludaniciach od roku ${club.zalozenie}, za štrekou od rokov 1946 – 1947.</p>
     </div>
     <div><h2 class="ftr-h">Ihrisko</h2><p>${esc(ST.nazov)}<br>${club.adresa.map(esc).join(', ')}</p><p><a href="${mapsUrl}" rel="noopener">Navigovať na ihrisko</a></p>${nextHome ? `<p>Najbližšie doma: <a href="${R}${nextHome.url}">${dShort(nextHome.date)} o ${esc(nextHome.time || '')} proti ${esc(nextHome.opponent)}</a></p>` : ''}</div>
     <div><h2 class="ftr-h">Kontakt</h2><p>${esc(club.pravnyNazov)}<br><a href="mailto:${club.kontakt.email}">${esc(club.kontakt.email).replace('@', '<wbr>@')}</a></p></div>
@@ -422,7 +422,7 @@ const seasonsTable = () => `<div class="tbl-wrap"><table class="tbl tbl--roc"><c
 
 // úvod
 add('', {
-  title: `futbal za štrekou od roku ${club.zalozenie}`, active: '', bodyClass: 'home',
+  title: `futbal v Ludaniciach od roku ${club.zalozenie}`, active: '', bodyClass: 'home',
   body: (R) => {
     const nextAll = upcoming.slice(0, 6);
     const lastAll = results.filter((m) => m.score).slice(0, 7);
@@ -440,7 +440,7 @@ add('', {
   <div class="hero-copy">
     <p class="eyebrow">Od roku ${club.zalozenie} · ročník ${SEASON}</p>
     <h1 class="hero-h" id="hero-h">OFK <span>Ludanice</span></h1>
-    <p class="hero-p">Futbal za štrekou: ihrisko na bývalej kapitulskej roli za traťou, okolo ktorého v rokoch 1946 – 1947 vysadili 50 líp. Po kvalifikácii hrá áčko ${esc(acc(A.leagueName))}${A.pos ? ` a ${winterNow ? 'po jeseni ' : ''}je na ${A.pos}. mieste ${zo(A.of)}` : ''}, v mládeži ${youth.length >= 2 && youth.length <= 4 ? 'hrajú' : 'hrá'} ${plural(youth.length, 'tím', 'tímy', 'tímov')} od prípravky U9 po žiakov U15.</p>
+    <p class="hero-p">Futbal za štrekou: ihrisko na bývalej kapitulskej roli za traťou, okolo ktorého v rokoch 1946 – 1947 vysadili asi 50 líp. Po kvalifikácii hrá áčko ${esc(acc(A.leagueName))}${A.pos ? ` a ${winterNow ? 'po jeseni ' : ''}je na ${A.pos}. mieste ${zo(A.of)}` : ''}, v mládeži ${youth.length >= 2 && youth.length <= 4 ? 'hrajú' : 'hrá'} ${plural(youth.length, 'tím', 'tímy', 'tímov')} od prípravky U9 po žiakov U15.</p>
     <p class="hero-cta"><a class="btn btn--green" href="${R}zapasy/">Program a výsledky</a><a class="btn btn--line" href="${R}ihrisko/">Ihrisko za štrekou</a></p>
   </div>
   <figure class="hero-plan">${planIhriska()}<figcaption><span><b>50</b> líp okolo ihriska</span><span><b>${ST.kapacita}</b> miest na tribúne</span></figcaption></figure>
@@ -470,7 +470,7 @@ ${A.table ? `<section class="sec" aria-labelledby="liga-h"><div class="wrap">
 </div></section>` : ''}
 <section class="sec sec--green" aria-labelledby="ks-h"><div class="wrap">
   ${secHead('Ihrisko za štrekou', 'ks-h', more(`${R}ihrisko/`, 'Celá kronika ihriska'), 'Od lúky pri ceste na Kovarce')}
-  ${kronika(ST.kronika.slice(1, 6))}
+  ${kronika(ST.kronika.slice(0, 5))}
   <p class="src src--inv">Zdroj: web obce Ludanice, stránka Obecný futbalový klub.</p>
 </div></section>
 <section class="sec" aria-labelledby="lk-h"><div class="wrap rings-wrap">
@@ -666,7 +666,7 @@ add('mladez/', {
 // klub: ročníky ako letokruhy, správy z novín, obec
 add('klub/', {
   title: 'Klub', active: 'klub/', desc: `${club.nazov}: futbal v Ludaniciach od roku ${club.zalozenie}, ročníky áčka od 2014/15, tituly 2016/17 a 2021/22, návrat do VI. ligy v roku 2026 a obec Ludanice.`,
-  body: (R) => `${pageHead({ title: 'Klub', sub: `${esc(club.pravnyNazov)}, futbal v Ludaniciach od roku ${club.zalozenie}. Farby erbu ${esc(club.farby)}.`, R, crumbs: [[null, 'Klub']] })}
+  body: (R) => `${pageHead({ title: 'Klub', sub: `${esc(club.pravnyNazov)}, futbal v Ludaniciach od roku ${club.zalozenie}. Farby erbu: ${esc(club.farby)}.`, R, crumbs: [[null, 'Klub']] })}
 <section class="sec sec--first"><div class="wrap klub-grid">
   <div>
     <h2 class="h2">Z Ludanických novín</h2>
@@ -828,7 +828,7 @@ function writeAdminDemo() {
       'ochrana-sukromia': { title: 'Ochrana súkromia', url: 'ochrana-sukromia/', html: '<p>Web nepoužíva cookies, analytiku ani reklamné nástroje.</p>' },
     },
     home: {
-      heroTitle: club.nazov, heroText: `Futbal za štrekou od roku 1935. Áčko hrá ${acc(A.leagueName)}.`, hero: null,
+      heroTitle: club.nazov, heroText: `Futbal v Ludaniciach od roku 1935. Áčko hrá ${acc(A.leagueName)}.`, hero: null,
       stadion: { title: ST.nazov, text: ST.fakty.map((u) => u.text || u.t).join(' ') },
     },
     galleries: [], videos: [], fanshop: { pozn: '', email: club.kontakt.email, produkty: [] }, partners: [],

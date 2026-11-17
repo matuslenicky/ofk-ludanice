@@ -1,8 +1,8 @@
-// Správanie webu OFK Ludanice (bez knižníc): menu ako vysúvací panel sprava, filtre zápasov, odpočet, kalendár.
+// Správanie klubového webu (bez knižníc): menu v dialógu, filtre zápasov, odpočet do výkopu, kalendár.
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-// ---- menu na telefóne: modálny <dialog> vysunutý sprava (Esc, „Zavrieť“ a klik mimo ho zatvoria, fokus sa vráti na tlačidlo) ----
+// ---- menu na telefóne: modálny <dialog> cez celú obrazovku (Esc, „Zavrieť“ a klik na odkaz ho zatvoria, fokus sa vráti na tlačidlo) ----
 const menuBtn = $('.menu-btn'), menu = $('#menu');
 if (menuBtn && menu && typeof menu.showModal === 'function') {
   const close = () => { if (menu.open) menu.close(); };
@@ -78,3 +78,23 @@ document.addEventListener('keydown', (e) => {
   if (e.key !== 'Escape') return;
   $$('[data-cal][open]').forEach((d) => { d.open = false; $('summary', d).focus(); });
 });
+
+// ---- záložky (data-tabs): bez JS sú všetky panely pod sebou, s JS jeden panel a ovládanie šípkami ----
+for (const box of $$('[data-tabs]')) {
+  const tabs = $$('[role="tab"]', box), panels = $$('[role="tabpanel"]', box);
+  if (!tabs.length || tabs.length !== panels.length) continue;
+  const pick = (i, focus) => {
+    tabs.forEach((t, j) => { t.setAttribute('aria-selected', String(i === j)); t.tabIndex = i === j ? 0 : -1; panels[j].hidden = i !== j; });
+    if (focus) tabs[i].focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => pick(i));
+    t.addEventListener('keydown', (e) => {
+      const last = tabs.length - 1;
+      const to = { ArrowRight: i === last ? 0 : i + 1, ArrowLeft: i === 0 ? last : i - 1, Home: 0, End: last }[e.key];
+      if (to !== undefined) { e.preventDefault(); pick(to, true); }
+    });
+  });
+  box.classList.add('tabs-on');
+  pick(0);
+}

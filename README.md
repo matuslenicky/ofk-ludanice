@@ -6,16 +6,14 @@ Ukážka: https://matuslenicky.github.io/ofk-ludanice/ · administrácia (ukáž
 
 ## Vzhľad
 
-**„Lipy za štrekou“.** Ihrisko leží za železničnou traťou („Za štrekou“) a pri jeho založení v rokoch 1946 – 1947 okolo neho vysadili 50 líp. Erb klubu je zelený štít so šikmou bielo-modro-žltou stuhou.
+**„Záložky tímov“ (dizajn v2, 17. 11. 2026).** Biela, zelená z erbu, modrá len v detailoch. Písmo Space Grotesk (nadpisy) a Gelasio (text).
 
-- krémové plochy a **šikmá stuha z erbu** v rohu hlavičky, hlavičiek podstránok a kariet,
-- úvod s **plánom ihriska zhora**: železničná trať, hracia plocha, 50 líp okolo nej a tribúna (SVG),
-- program ako **zavesené tabule staníc**: doma zelená, vonku bridlicová, nápis súpera ako názov stanice,
-- výsledky ako **lipové listy**: výhra zelený, remíza žltý, prehra hnedý list so skóre v poradí naše:súper,
-- ročníky áčka ako **letokruhy lipy**: jeden kruh za ročník, tituly zlaté, krajské súťaže bridlicové,
-- **kronika ihriska** ako trať so stanicami (od lúk pri ceste na Kovarce po dnešný štadión),
-- menu na telefóne ako **panel vysunutý sprava**,
-- písmo **Young Serif** (nadpisy a čísla), **Barlow** (text) a **Barlow Condensed** (nápisy na tabuliach).
+- hlavička s menom v strede a menu na zelenom páse pod ním,
+- úvod: titulok „Futbal za štrekou“, najbližší zápas áčka a záložky tímov (áčko, žiaci, prípravky); každá záložka ukáže najbližší zápas, posledné zápasy a výrez tabuľky, bez JavaScriptu sú tímy pod sebou,
+- krátko o ihrisku Za štrekou, celá kronika ihriska, správy z Ludanických novín, ročníky a obec sú na stránke Klub,
+- menu na telefóne je biela plocha cez celú obrazovku.
+
+Web sa skladá zo spoločného jadra v2 (`kluby-siet/engine`: `python assemble.py <web>`), vlastný je `src/site.js` (úvod, Klub, nastavenia) a `src/css/skin.css`.
 
 ## Obsah a zdroje
 

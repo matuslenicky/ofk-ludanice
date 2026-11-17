@@ -1,0 +1,118 @@
+{
+  "_zdroj": "Ručne zapísané len zo zverejnených zdrojov (uvedené pri každej časti). Nič nedopĺňať odhadom – chýbajúce údaje dodá klub.",
+  "nazov": "OFK Ludanice",
+  "kratky": "Ludanice",
+  "pravnyNazov": "Obecný futbalový klub Ludanice",
+  "_pravnyNazov": "Sportnet",
+  "mesto": "Ludanice",
+  "zalozenie": 1935,
+  "_zalozenie": "web obce (Obecný futbalový klub): 50. výročie klubu 5. 8. 1985; Wikipédia (OFK Metacolor Ludanice): založený 1935",
+  "farby": "zelená, biela, modrá a žltá",
+  "_farby": "erb klubu (Sportnet): zelený štít, šikmá bielo-modro-žltá stuha",
+  "erbAlt": "Erb OFK Ludanice: zelený štít s erbom obce (žena s tromi zlatými klasmi v modrom štíte), šikmou bielo-modro-žltou stuhou a loptou",
+  "adresa": ["Nádražná", "956 11 Ludanice"],
+  "_adresa": "Sportnet (ulica Nádražná, PSČ 956 11)",
+  "kontakt": { "email": "ofkludanice@centrum.sk" },
+  "_kontakt": "Sportnet (kontakt klubu)",
+  "sportnetUrl": "https://sportnet.sme.sk/futbalnet/k/ofk-ludanice/",
+  "obecFutbal": "https://www.obecludanice.sk/9568/obecny-futbalovy-klub",
+  "noviny": "https://www.obecludanice.sk/11135/ludanicke-noviny",
+  "_noviny": "Ludanické noviny, noviny obce (jedno číslo ročne), príspevky organizácií vrátane OFK",
+  "stadion": {
+    "_zdroj": "web obce, stránka Obecný futbalový klub (2020); Ludanické noviny 2025 a 2026; Sportnet (poloha)",
+    "nazov": "Futbalový štadión OFK Ludanice",
+    "geo": [48.5010126, 18.1158968],
+    "kapacita": 240,
+    "kronika": [
+      { "k": "20. roky", "t": "Futbal sa hrá na lúkach popri dnešnej ceste na Kovarce, hracia plocha sa musí podriadiť poľnohospodárskej činnosti." },
+      { "k": "1946 – 1947", "t": "Po parcelácii dostanú futbalisti 1 ha na kapitulskej roli „Za štrekou“. Hráči, funkcionári aj fanúšikovia ju svojpomocne zorú, zasejú trávu a povalcujú. Okolo ihriska vysadia asi 50 líp." },
+      { "k": "1950", "t": "Príval vody po prietrži z vedľajšieho kanála zaplaví ihrisko, nános bahna znemožní hrať zápasy." },
+      { "k": "50. – 60. roky", "t": "Šatne chýbajú. Hráči sa umývajú v kanáli alebo u fanúšikov, prezliekajú sa v starej škole asi 500 metrov od ihriska." },
+      { "k": "1971", "t": "Prvé kabíny, neskôr aj voda. V akcii „Z“ pribudne panelovo-betónový plot za 120 000 Kčs." },
+      { "k": "1997", "t": "Nový výbor na čele s prezidentom Mariánom Kapustom dokončí nové kabíny a oceľovo-laminátovú tribúnu s 240 miestami na sedenie." },
+      { "k": "Dnes", "t": "Štyri šatne, sauna s bazénom, automatická závlaha, svetelná tabuľa a predĺžené a rozšírené ihrisko. Trávnik roky udržiavali Vladimír Košecký st. a Vladimír Čerňan st." }
+    ],
+    "fakty": [
+      { "k": "Za štrekou", "t": "Ihrisko leží na bývalej kapitulskej roli za železničnou traťou, futbal sa tu hrá od rokov 1946 – 1947." },
+      { "k": "50 líp", "t": "Pri zakladaní ihriska vysadili okolo hracej plochy približne 50 líp." },
+      { "k": "240 miest", "t": "Oceľovo-laminátová tribúna z konca 90. rokov má 240 miest na sedenie." },
+      { "k": "2024 – 2025", "t": "Ohrievače v kabínach, osvetlenie ihriska, nové striedačky a toalety pre fanúšikov, s obcou, Nitrianskym krajom a SFZ." }
+    ]
+  },
+  "dni": {
+    "_zdroj": "web obce, stránka Obecný futbalový klub (2020)",
+    "zoznam": [
+      { "rok": "1985", "text": "5. augusta k 50. výročiu klubu priateľský zápas s Interom Bratislava (2:6), moderoval Gabo Zelenay." },
+      { "rok": "koniec 90. rokov", "text": "Zrekonštruovaný areál otvoril zápas starých pánov Spartaka Trnava s Jozefom Adamcom proti Internacionálom Slovenska." }
+    ]
+  },
+  "rocniky": {
+    "_zdroj": "Sportnet – konečné tabuľky áčka (dospelí), stiahnuté 17. 11. 2026",
+    "zoznam": [
+      { "rok": "2014/15", "liga": "V. liga Stred", "kraj": true, "poz": 16, "z": 16, "skore": "33:86", "body": 20 },
+      { "rok": "2015/16", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 10, "z": 14, "skore": "35:55", "body": 31 },
+      { "rok": "2016/17", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 1, "z": 14, "skore": "53:26", "body": 53, "titul": true, "pozn": "víťaz pri rovnosti bodov s Kuzmicami" },
+      { "rok": "2017/18", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 6, "z": 16, "skore": "62:41", "body": 48 },
+      { "rok": "2018/19", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 9, "z": 16, "skore": "59:61", "body": 41 },
+      { "rok": "2019/20", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 2, "z": 16, "skore": "44:29", "body": 29, "pozn": "nedohraná sezóna (pandémia)" },
+      { "rok": "2020/21", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 2, "z": 16, "skore": "19:8", "body": 19, "pozn": "nedohraná sezóna (pandémia)" },
+      { "rok": "2021/22", "liga": "VI. liga ObFZ Topoľčany", "kraj": false, "poz": 1, "z": 14, "skore": "89:24", "body": 69, "titul": true, "pozn": "22 výhier, 3 remízy, 1 prehra; postup do krajskej VI. ligy Stred" },
+      { "rok": "2022/23", "liga": "VI. liga Stred (ZsFZ)", "kraj": true, "poz": 15, "z": 16, "skore": "28:69", "body": 23 },
+      { "rok": "2023/24", "liga": "VI. liga Stred (ZsFZ)", "kraj": true, "poz": 16, "z": 16, "skore": "28:74", "body": 20 },
+      { "rok": "2024/25", "liga": "VII. liga ObFZ Topoľčany", "kraj": false, "poz": 12, "z": 14, "skore": "45:64", "body": 24 },
+      { "rok": "2025/26", "liga": "VII. liga ObFZ Topoľčany", "kraj": false, "poz": 3, "z": 10, "skore": "47:39", "body": 40, "pozn": "po jeseni prví; v auguste 2026 kvalifikácia o VI. ligu Severovýchod" }
+    ]
+  },
+  "kvalifikacia": {
+    "_zdroj": "Sportnet (VI. liga Severovýchod, kvalifikačné stretnutie 8. 8. 2026, ihrisko OFK Bošany)",
+    "text": "V kvalifikačnom zápase 8. augusta 2026 na ihrisku v Bošanoch zdolali Ludanice OŠK Pečeňany 1:0 a vrátili sa do krajskej VI. ligy."
+  },
+  "spravy": {
+    "_zdroj": "Ludanické noviny 2025 a 2026 (príspevky OFK Ludanice)",
+    "zoznam": [
+      { "rok": "2024", "text": "Po vypadnutí z VI. ligy Stred sa káder takmer celý vymenil, ostalo päť hráčov. Na jeseň tvorilo 14 zo 17 hráčov chlapci z Ludaníc a Dvorian nad Nitrou. Trénerom bol Roman Jakubička." },
+      { "rok": "2025", "text": "Ročník 2024/25 skončilo áčko dvanáste, prípravky U11 a U9 druhé. V lete začalo trénovať ako prvý tím v okrese, 5. júla, a jeseň 2025 odohralo s najmladším mužstvom v histórii klubu na prvom mieste." },
+      { "rok": "2026", "text": "Návrat do krajskej VI. ligy Severovýchod po kvalifikácii proti Pečeňanom." }
+    ]
+  },
+  "mladez": {
+    "_zdroj": "Ludanické noviny 2025 a 2026; Sportnet (tímy a tréneri)",
+    "text": "Mládež v posledných rokoch pribúda. S deťmi pracujú ľudia okolo Matúša Uhlára, najmä bratia Doležajovci. Klub chce, aby čo najviac z nich raz obliekalo dres áčka."
+  },
+  "obec": {
+    "_zdroj": "web obce (História, Benediktínsky kláštor, Štatút obce), Wikipédia (Ludanice)",
+    "fakty": [
+      { "k": "1242", "t": "Prvá písomná zmienka o obci pod názvom Ludan v listine Nitrianskej kapituly." },
+      { "k": "Mestečko a hrad", "t": "V roku 1422 dostali Ludanice právo týždenných trhov. Ladislav Ludanický po roku 1425 prestaval hrádok na kamenný hrad, útočisko počas husitských výprav." },
+      { "k": "Kláštor", "t": "V rokoch 2005 až 2007 archeológovia odkryli v obci zvyšky stredovekého benediktínskeho kláštora." },
+      { "k": "Ludanická skupina", "t": "Podľa nálezov z Ludaníc z roku 1884 pomenovali archeológovia ludanickú skupinu lengyelskej kultúry neskorej doby kamennej." },
+      { "k": "Erb", "t": "V modrom štíte strieborno odetá a zlatovlasá žena, ktorá drží tri veľké zlaté klasy. Erb obce nesie aj znak klubu." }
+    ]
+  },
+  "uspechy": [
+    { "rok": "2016/17", "text": "víťaz VI. ligy ObFZ Topoľčany" },
+    { "rok": "2021/22", "text": "víťaz VI. ligy ObFZ Topoľčany, postup do krajskej súťaže" },
+    { "rok": "2026", "text": "postup do VI. ligy Severovýchod cez kvalifikáciu" }
+  ],
+  "sutaze": {
+    "_pozn": "čitateľné názvy súťaží namiesto skratiek a názvov so sponzormi zo Sportnetu",
+    "VI. liga Severovýchod Macron | yoursport  ZsFZ": "VI. liga Severovýchod",
+    "IV.liga - Ž - U15 - ObFZ TO": "IV. liga starších žiakov U15",
+    "IV. liga - Ž - U13 - ObFZ TO": "IV. liga mladších žiakov U13",
+    "III. liga-prípravka-U11- ObFZ TO": "III. liga prípraviek U11",
+    "III. liga-prípravka-U09- ObFZ TO": "III. liga prípraviek U9",
+    "Slovnaft Cup": "Slovnaft Cup"
+  },
+  "nazvy": {
+    "_pozn": "čitateľné názvy súperov namiesto úradných názvov a veľkých písmen zo Sportnetu",
+    "TJ - ŠK Radošina": "TJ-ŠK Radošina",
+    "FUTBALOVÝ KLUB SLOVAN ŠIMONOVANY - PARTIZÁNSKE": "Slovan Šimonovany-Partizánske",
+    "Futbalový klub Koniarovce": "FK Koniarovce",
+    "Mestský futbalový klub Baník Handlová": "MFK Baník Handlová",
+    "OFK obce Prašice": "OFK Prašice",
+    "TJ Družstevník Horná Nitra Nedožery-Brezany": "TJ Družstevník Nedožery-Brezany",
+    "ŠPORTOVÉ CENTRUM CHYNORANY": "ŠC Chynorany",
+    "ŠK VEGUM Dolné Vestenice": "ŠK Vegum Dolné Vestenice",
+    "TJ  Slovan Bojná": "TJ Slovan Bojná"
+  }
+}

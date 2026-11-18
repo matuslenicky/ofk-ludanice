@@ -6,7 +6,7 @@ Ukážka: https://matuslenicky.github.io/ofk-ludanice/ · administrácia (ukáž
 
 ## Vzhľad
 
-**„Záložky tímov“ (dizajn v2, 17. 11. 2026).** Biela, zelená z erbu, modrá len v detailoch. Písmo Space Grotesk (nadpisy) a Gelasio (text).
+**„Záložky tímov“ (dizajn v2, 17. 11. 2026).** Biela, zelená z erbu, modrá len v detailoch. Písmo Familjen Grotesk (nadpisy) a Gelasio (text).
 
 - hlavička s menom v strede a menu na zelenom páse pod ním,
 - úvod: titulok „Futbal za štrekou“, najbližší zápas áčka a záložky tímov (áčko, žiaci, prípravky); každá záložka ukáže najbližší zápas, posledné zápasy a výrez tabuľky, bez JavaScriptu sú tímy pod sebou,

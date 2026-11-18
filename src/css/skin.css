@@ -2,7 +2,7 @@
 :root {
   --bg: #fff; --paper: #fff; --ink: #18221a; --muted: #57615a; --line: #e0e5df;
   --green: #235a28; --green-l: #eaf2e9; --slate: #2f4951; --tint: #f5f7f3; --focus: #235a28; --link: #235a28;
-  --disp: 'Space Grotesk', system-ui, sans-serif;
+  --disp: 'Familjen Grotesk', system-ui, sans-serif;
   --text: 'Gelasio', Georgia, 'Times New Roman', serif;
   --text-size: 1.0938rem; --lh: 1.62;
   --menu-bg: #fff; --menu-ink: #18221a;
@@ -113,11 +113,9 @@ html:not(.js) .tp + .tp { margin-top: 32px; border-top: 1px solid var(--line); }
 .contact-mail { font: 700 clamp(1.3rem, 4vw, 2rem)/1.2 var(--disp); }
 
 /* päta */
-.ftr { background: var(--green); color: #dfeadf; }
-.ftr a { color: #fff; }
-.ftr-name { font: 700 1.15rem/1.2 var(--disp); color: #fff; }
-.ftr :focus-visible { outline-color: #fff; }
-.ftr-src { color: #c8dbc8; }
-.ftr-bar { border-top: 1px solid rgba(255, 255, 255, .18); color: #c8dbc8; }
+.ftr { background: #f5f7f4; color: var(--ink); border-top: 3px solid var(--green); }
+.ftr-name { font: 700 1.15rem/1.2 var(--disp); }
+.ftr-src { color: var(--muted); }
+.ftr-bar { border-top: 1px solid var(--line); color: var(--muted); }
 .demo { background: var(--slate); color: #fff; }
 .hdr-nav { max-width: none; }
